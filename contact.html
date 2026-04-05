@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Pellegrino Sensory Research Laboratory</title>
+  <meta name="description" content="Sign up to be a taste tester, inquire about services, or reach out to the Pellegrino Sensory Research Laboratory at Texas A&M University." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <span class="nav-brand-name">Pellegrino Lab</span>
+        <span class="nav-brand-sub">Texas A&amp;M University</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="facilities.html">Facility</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Get In Touch</span>
+      <h1>Contact</h1>
+      <p>Sign up to be a taste tester, inquire about sensory services, or reach out about research collaborations.</p>
+    </div>
+  </section>
+
+  <!-- Contact Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Taste Tester Form -->
+        <div class="contact-form-card">
+          <h2 class="form-title">Become a Taste Tester</h2>
+          <p class="form-desc">
+            We regularly recruit participants for sensory research studies conducted at the Texas A&amp;M
+            Sensory Science Facility in College Station. Sign up below and we will contact you when
+            studies matching your profile are available.
+          </p>
+
+          <form id="tasterForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name <span class="req">*</span></label>
+                <input type="text" id="firstName" name="firstName" placeholder="Jane" required autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name <span class="req">*</span></label>
+                <input type="text" id="lastName" name="lastName" placeholder="Smith" required autocomplete="family-name" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="age">Age <span class="req">*</span></label>
+                <input type="number" id="age" name="age" placeholder="e.g. 28" min="18" max="100" required />
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender <span class="req">*</span></label>
+                <select id="gender" name="gender" required>
+                  <option value="" disabled selected>Select...</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                  <option value="other">Other / Prefer not to say</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+            </div>
+
+            <button type="submit" class="form-submit">Sign Me Up</button>
+
+            <div id="formMessage" class="form-message"></div>
+          </form>
+
+          <p style="font-size:0.76rem; color:var(--muted); margin-top:20px; line-height:1.6;">
+            Your information will only be used to contact you about research study participation at
+            Texas A&amp;M University. We do not share your data with third parties.
+            Studies are typically compensated and take 1–2 hours.
+          </p>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <div class="contact-info-card">
+            <h3>Direct Contact</h3>
+
+            <div class="contact-entry">
+              <p class="contact-entry-label">Service Inquiries</p>
+              <p class="contact-entry-value">
+                For information about consumer testing, descriptive analysis, or instrumental testing services:<br />
+                <a href="mailto:sensory@ag.tamu.edu">sensory@ag.tamu.edu</a>
+              </p>
+            </div>
+
+            <div class="contact-entry">
+              <p class="contact-entry-label">Research &amp; Collaboration</p>
+              <p class="contact-entry-value">
+                For research inquiries, collaboration proposals, or graduate student opportunities:<br />
+                <a href="mailto:robert.pellegrino@tamu.edu">robert.pellegrino@tamu.edu</a>
+              </p>
+            </div>
+
+            <div class="contact-entry">
+              <p class="contact-entry-label">Location</p>
+              <p class="contact-entry-value">
+                Kleberg Animal and Food Sciences Center (KLCT)<br />
+                Texas A&amp;M University<br />
+                College Station, Texas
+              </p>
+            </div>
+
+            <div class="contact-entry">
+              <p class="contact-entry-label">Links</p>
+              <p class="contact-entry-value">
+                <a href="https://animalscience.tamu.edu/people/pellegrino-robert/" target="_blank" rel="noopener">Faculty Page</a><br />
+                <a href="https://bsky.app/profile/kingfunk.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Services CTA -->
+          <div style="background:var(--bg-white); border-radius:var(--radius-lg); box-shadow:var(--shadow); padding:28px; margin-top:24px;">
+            <p style="font-size:0.72rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--amber); margin-bottom:8px;">Industry &amp; Academic Partners</p>
+            <h3 style="font-size:1.1rem; margin-bottom:8px;">Looking for Testing Services?</h3>
+            <p style="font-size:0.88rem; color:var(--text-light); margin-bottom:16px;">
+              Review our service menu and pricing, then reach out to schedule a free consultation.
+            </p>
+            <a href="services.html" class="btn btn-navy" style="font-size:0.85rem; padding:10px 18px;">View Services &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Apps Script Setup Instructions (hidden — for admin reference) -->
+  <!--
+    ===============================================================
+    GOOGLE APPS SCRIPT SETUP — TASTE TESTER FORM
+    ===============================================================
+
+    1. Create a new Google Sheet. Name the first row columns:
+       Timestamp | First Name | Last Name | Age | Gender | Email
+
+    2. Go to Extensions > Apps Script in that Google Sheet.
+
+    3. Paste this code:
+
+    function doPost(e) {
+      try {
+        var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+        var data = JSON.parse(e.postData.contents);
+        sheet.appendRow([
+          new Date(),
+          data.firstName || '',
+          data.lastName  || '',
+          data.age       || '',
+          data.gender    || '',
+          data.email     || ''
+        ]);
+        return ContentService
+          .createTextOutput(JSON.stringify({ status: 'success' }))
+          .setMimeType(ContentService.MimeType.JSON);
+      } catch (err) {
+        return ContentService
+          .createTextOutput(JSON.stringify({ status: 'error', message: err.toString() }))
+          .setMimeType(ContentService.MimeType.JSON);
+      }
+    }
+
+    4. Click Deploy > New Deployment.
+       - Type: Web App
+       - Execute as: Me
+       - Who has access: Anyone
+
+    5. Copy the Web App URL.
+
+    6. Open js/main.js and replace:
+       const SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL';
+       with your actual URL.
+    ===============================================================
+  -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Pellegrino Sensory Research Laboratory</div>
+          <div class="footer-brand-sub">Texas A&amp;M University</div>
+          <p>Kleberg Animal and Food Sciences Center, College Station, Texas.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="facilities.html">Facility</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:robert.pellegrino@tamu.edu">robert.pellegrino@tamu.edu</a></li>
+            <li><a href="mailto:sensory@ag.tamu.edu">sensory@ag.tamu.edu</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Pellegrino Sensory Research Laboratory, Texas A&amp;M University. All rights reserved.</p>
+        <p>Built for science.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
