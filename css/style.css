@@ -926,8 +926,9 @@ ul { list-style: none; }
 
 .facility-img {
   width: 100%;
-  max-height: 420px;
+  max-height: 360px;
   object-fit: cover;
+  object-position: center;
   border-radius: 0;
   margin-bottom: 0;
 }
