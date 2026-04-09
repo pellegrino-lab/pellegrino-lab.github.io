@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (form) {
     const msg = document.getElementById('formMessage');
 
-    // REPLACE THIS URL with your deployed Google Apps Script Web App URL
+    // Deployed Google Apps Script Web App URL
     const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz_W4DXz_7jigQSIK07L9TvkusnazsUYH4PVkyEW1Bwu0DLYIj9ukM9_4BVnyzTBh4iCQ/exec';
 
     form.addEventListener('submit', function (e) {
@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
         age:       form.age.value,
         gender:    form.gender.value,
         email:     form.email.value.trim(),
+        dietary:   form.dietary.value.trim(),
       };
 
       fetch(SCRIPT_URL, {

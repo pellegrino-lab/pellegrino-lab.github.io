@@ -86,6 +86,11 @@
               <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
             </div>
 
+            <div class="form-group">
+              <label for="dietary">Dietary Restrictions, Aversions &amp; Allergies</label>
+              <textarea id="dietary" name="dietary" rows="3" placeholder="e.g. peanut allergy, lactose intolerant, dislike cilantro..."></textarea>
+            </div>
+
             <button type="submit" class="form-submit">Sign Me Up</button>
 
             <div id="formMessage" class="form-message"></div>
@@ -159,7 +164,7 @@
     ===============================================================
 
     1. Create a new Google Sheet. Name the first row columns:
-       Timestamp | First Name | Last Name | Age | Gender | Email
+       Timestamp | First Name | Last Name | Age | Gender | Email | Dietary
 
     2. Go to Extensions > Apps Script in that Google Sheet.
 
@@ -175,7 +180,8 @@
           data.lastName  || '',
           data.age       || '',
           data.gender    || '',
-          data.email     || ''
+          data.email     || '',
+          data.dietary   || ''
         ]);
         return ContentService
           .createTextOutput(JSON.stringify({ status: 'success' }))
