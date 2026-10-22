@@ -1213,6 +1213,7 @@ ul { list-style: none; }
 
   .hero-grid,
   .research-split,
+  .research-focus,
   .contact-grid,
   .pi-card,
   .grid-2,
@@ -1261,4 +1262,82 @@ ul { list-style: none; }
 
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; text-align: center; }
+}
+
+/* --- Current research schematic (home, inside approach banner) --- */
+.research-focus {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: center;
+  margin-top: 56px;
+}
+
+.research-focus-text h3 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.research-focus-text p {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.98rem;
+}
+
+.research-focus-figure {
+  display: block;
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+}
+
+.research-focus-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+/* --- Facility photo pairs --- */
+.facility-img-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  background: var(--navy);
+}
+
+.facility-img-pair img,
+.facility-img-wide {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+}
+
+.facility-img-wide {
+  aspect-ratio: auto;
+  max-height: 460px;
+}
+
+/* --- Uniform team photos --- */
+.team-grid .member-photo { height: 260px; }
+
+.member-initials {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 3.2rem;
+  letter-spacing: 0.04em;
+  color: var(--navy);
+  opacity: 0.35;
+}
+
+@media (max-width: 600px) {
+  .facility-img-pair { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 900px) {
+  .research-focus { grid-template-columns: 1fr; gap: 24px; }
+  .research-focus-figure { padding: 12px; }
 }
